@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <titel>valied form</titel>
+    </head>
+    <body>
+        <script>
+            function Oper(){
+                var name=document.getElementById("name").value;
+                var pass=document.getElementById("pass").value;
+                if (name==="" || name===null){
+                    window.alert("name has blank");
+
+                }
+                else if(pass.length<=9){
+                    alert("passwoed must be least 9 charcter");
+
+                }
+                else{
+                    alert("succesfully")
+                }
+            }
+        </script>
+        <form>
+            <lable> name</lable>
+            <input type="text" id="name">
+            <lable>password </lable>
+            <input type="password" id="pass">
+            <input type="submit" id="login" onclick="Oper()">
+
+            
+        </form>
+    </body>
+</html>
